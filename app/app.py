@@ -24,13 +24,13 @@ def go():
 
 
 def get_champion():
-    with open('/data/champion', 'r') as _file:
+    with open('/appdata/champion', 'r') as _file:
             champion = _file.read()
     return champion
 
 
 def set_champion(champion):
-    with open('/data/champion', 'w') as _file:
+    with open('/appdata/champion', 'w') as _file:
         _file.write(champion)
 
 
