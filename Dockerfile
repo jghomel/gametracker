@@ -1,6 +1,6 @@
-FROM python:2.7
-MAINTAINER Shekhar Gulati "shekhargulati84@gmail.com"
-COPY . /app
+FROM python:3
+MAINTAINER Jan-Philippe Lavoie "janphilippelavoie@gmail.com"
+COPY app /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
