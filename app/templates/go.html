@@ -1,11 +1,64 @@
-<!doctype html>
-<title>Grand maitre de go</title>
-<h1>Le grand maitre de go est: {{ name }}!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title> Qui est le champion?</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<style type="text/css">
+		body {
+			background-color: #2F4F4F;
+			font-family: 'Roboto';
+			font-size:1.2em;
+			color: white;
 
-<form method="POST" name="champion">
-  <select name="champion" onchange="this.form.submit()">
-    <option value="" disabled selected></option> 
-    <option value="jp">JP</option>
-    <option value="francois">François</option>
-  </select>
-</form>
+		}
+
+		h1 {
+			font-size: 5em;
+			text-align: center;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		.btn {
+			font-size:2em;
+		}
+
+		.row {
+			padding-top: 30px;
+		}
+
+	</style>
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"> <h1> Qui est le roi de tous les jeux de Go? </h1></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<form method="POST" name="champion">
+					<option value="jp" onclick="this.form.submit()"><div class="middle btn btn-large btn-primary centered">JP est le roi du GO du monde</div></option>
+				</div>
+				<div class="col-sm-5">
+					<option value="francois" onclick="this.form.submit()"><div class="middle btn btn-large btn-primary centered"> François pète JP comme un noob </div></option>
+				</div>
+					</form>
+				<div class="col-sm-1">
+			</div>
+		</div>
+		<div class="row">
+			<h2> Le joeur victorieux est actuellement {{name}}</h2>
+		</div>
+	</div>	
+
+</head>
+<body>
+
+</body>
+</html>
